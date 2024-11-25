@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "electrobun": "^0.0.18"
+  },
+  "scripts": {
+    "start": "bun run build:dev && electrobun dev",
+    "build:dev": "bun install && electrobun build"
+  }
+}
